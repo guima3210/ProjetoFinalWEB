@@ -81,10 +81,6 @@ a{
   flex: 100%;
   text-align: center;
 }
-.mainnn {
-  flex: 100%;
-  text-align: center;
-}
 .footerr {
     flex: 100%;
     position: absolute;
@@ -115,19 +111,23 @@ a{
 a:hover {
     color: greenyellow;
 }
-
-.grid-containerr {
-  display: grid;
-  width: 50%;
-  grid-template-columns: auto auto auto auto;
-  background-color: white;
-  padding: 5px;
-  text-align: center;
+.Formulario{
+    border-style: solid;
 }
-.itemgridd {
-  background-color: red;
-  border: 1px solid rgba(0, 0, 0, 0.8);
- padding: 10px;
-  font-size: 20px;
+.grid-container2 {
+  display: grid;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  grid-template-columns: auto auto auto;
+  background-color: white;
+  padding: 10px;
+  
+}
+.itemgrid2 {
+    justify-content: space-between;
+  background-color: white;
+  border-style: none;
+  padding: 0px;
+  font-size: 30px;
   text-align: center;
 }

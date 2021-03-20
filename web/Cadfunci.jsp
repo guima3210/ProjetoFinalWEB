@@ -18,43 +18,47 @@
             
         </header>
         <div class="row">
-            <div class="mainnn">
+            <div class="mainn">
             
-           <div class="grid-containerr">
+           <div class="grid-container2" >
                <form name="form1" method="post" action="Cadfuncionario" align="center">
+            <div class="itemgrid2 ">
+                RG:
+                <input type="text" name="rg">
             
-                <div class="itemgridd ">RG
-                    <input type="text" name="rg"></div>
+                    NOME:<input type="text" name="nome">
+                
+                Login:
+                <input type="text" name="login">
+                Senha:
+                    <input type="text" name="senha">
+                    </div>
+                   <div class="itemgrid2 ">
+                Salario:
+                    <input type="text" name="salario">
             
-                <div class="itemgridd ">NOME:<input type="text" name="nome"></div>
+                Email:<input type="text" name="email">
                 
-                   <div class="itemgridd "><h2>Idade</h2>
-                    <input type="text" name="idade"></div>
+                Numero Fixo:
+                <input type="text" name="numerof"><br>
+                Numero Carteira de trabalho:
+                    <input type="text" name="numeroct">
+                    </div>
+                   <div class="itemgrid2 ">
+                Idade:
+                    <input type="text" name="idade">
             
-                <div class="itemgridd "><h2>Login</h2>
-                <input type="text" name="login"></div>
-                
-                <div class="itemgridd "><h2>Senha</h2>
-                    <input type="text" name="senha"></div>
+                    </div>
+                    
             
-                <div class="itemgridd "><h2>Salario</h2>
-                <input type="text" name="salario"></div>
                 
-                <div class="itemgridd "><h2>Email</h2>
-                    <input type="text" name="email"></div>
-            
-                <div class="itemgridd "><h2>Numero fixo:</h2>
-                <input type="text" name="numerof"></div>
                 
-                <div class="itemgridd "><h2>Numero Carteira de trabalho</h2>
-                <input type="text" name="numeroct"></div>
-                
-            <input type="submit" value="Sair">
+                <input type="submit" value="Sair">
            
         </form>
             </div></div>
             
-        <div class="footer">
+        <div class="footerr">
             <h5>SIX DESENVOLVIMENTO</h5>
             <iframe src="https://www.youtube.com/embed/kM0Ee0KnhlI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <ul>
