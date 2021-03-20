@@ -1,6 +1,6 @@
 <%-- 
-    Document   : telagerente
-    Created on : 19/03/2021, 13:33:29
+    Document   : BatePonto
+    Created on : 20/03/2021, 03:09:35
     Author     : guima
 --%>
 
@@ -11,30 +11,26 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
         <link rel="stylesheet" type="text/css" href="estilo.css">
-        
     </head>
     <body>
         
         <header class="header"><a href="index.jsp"><img src="https://cdn.discordapp.com/attachments/695407830660022286/708101674442555472/f2da5279-05f2-4a9a-8f5c-68788051317b.png" width=150></a>
-            <nav>
-                <ul class="menu">                
-                    <li><a href="index.jsp">Sair</a></li>
-                    <li><a href="BatePonto.jsp">Bate Ponto Saida</a></li>
-                    
-                </ul>
-            </nav>
+            
         </header>
             
                 <section class="grid2">  
-                    <a href="Entradasaida.jsp">Controle de Entrada e Saida</a>
-                    <a href="">Exibir estoque</a>
-                    <a href="">Cadastrar novo Produto</a>
-                    <a href="">Mostrar Funcionarios</a>
-                    <a href="">Adicionar novas especialidades para medicos</a>
-                    <a href="">Mudar Status Funcionario</a>
-                    <a href="">Demitir Funcionario</a>
-                    <a href="">Controle de gasto</a>
-                    <a href="">Declaração de compra</a>
+                    <form name="form1" method="post" action="Valida" align="center">
+            
+                <h2>login</h2>
+                    <input type="text" name="login">
+            
+                <h2>senha</h2>
+                <input type="text" name="senha">
+            
+                <br><br>
+            <input type="submit" value="Entrar">
+           
+        </form>
                     </section>
             
             <footer class="grid3">
@@ -46,7 +42,15 @@
                 
             </ul>
         </footer>
-        
-    </div>
+        <% 
+            String rep = request.getParameter("ret");  
+            String rep2 = request.getParameter("sai"); 
+        if(rep != null){
+            out.println("usuario ou senha incorretos");
+        }
+        if(rep2 != null){
+            out.println("esse usuario não pertence a equipe");
+        }
+        %>
         </body>
 </html>

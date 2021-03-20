@@ -31,16 +31,16 @@
                 </div>
             <div class="sidebar">
         <form name="form1" method="post" action="Valida" align="center">
-            <table border="1">
-                <tr><td><h1>login</h1></td>
-                    <td><input type="text" name="login"></td>
-            </tr> 
-            <tr><td><h1>senha</h1></td>
-                <td><input type="text" name="senha"></td>
             
-            </tr>
-            <tr><td colspan="2" align="center"><input type="submit" value="Entrar"></td></tr>
-           </table>
+                <h2>login</h2>
+                    <input type="text" name="login">
+            
+                <h2>senha</h2>
+                <input type="text" name="senha">
+            
+            
+            <input type="submit" value="Entrar">
+           
         </form></div>
                     </section>
             

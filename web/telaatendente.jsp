@@ -10,12 +10,33 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
+        <link rel="stylesheet" type="text/css" href="estilo.css">
     </head>
     <body>
-        <ul class="menu-menu">
-    <li><button type="submit" onclick="window.location.href='menu.html'">Login</button></li>
-    <li><button type="submit" onclick="window.open('menu.html',width=660,height=510)">Login</button></li>
-    <li><button type="submit" onclick="window.open('MarcaConsulta.jsp')">Marca Consulta</button></li>
-  </ul>
-    </body>
+        <div id="wrap">
+        <header class="header"><a href="index.jsp"><img src="https://cdn.discordapp.com/attachments/695407830660022286/708101674442555472/f2da5279-05f2-4a9a-8f5c-68788051317b.png" width=150></a>
+            <nav>
+                <ul class="menu">                
+                    <li><a href="index.jsp">Sair</a></li>
+                    <li><a href="BatePonto.jsp">Bate Ponto Saida</a></li>
+                </ul>
+            </nav>
+        </header>
+            <section class="grid2"></section>
+          
+            
+                    
+            
+            <footer class="grid3">
+            <h5>SIX DESENVOLVIMENTO</h5>
+            <ul>
+                <li>Telefone:121322</li>
+                <li>Email:guim@outlo</li>
+                <li>Endereco: rua joao</li>
+                
+            </ul>
+        </footer>
+        
+    </div>
+        </body>
 </html>

@@ -35,12 +35,28 @@ a{
 }
 
 .grid2 {
+  
   display: grid;
   grid-template-columns: 1fr 200px;
   grid-gap: 20px;
   max-width: 800px;
   padding: 10px;
-  margin: 0 auto;
+  margin: auto auto;
+  
+}
+form{
+    align-items: center;
+    
+    
+    
+}
+.grid2 a{
+    background: black;
+    color: white;
+    border-style: solid;
+    width: 200px;
+    height: 70px;
+    text-align: center;
 }
 
 .grid3{
@@ -52,14 +68,17 @@ a{
     padding: 150px;
         
 }
-.content{
-    
+.img{
+    margin-left: 20%;
 }
 #paragrafo{
     width: 600px;
     align-items: center;
 }
-
+.sidebar{
+    margin: 0 auto;
+    border-style: solid;
+}
 .sidebar > div {
   margin-bottom: 10px;
 }
