@@ -24,11 +24,12 @@
         </header>
             
           <section class="grid2">
-              <div id="content">
-                
+              <div class="content">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGoZ-D0VTsSaXsIgkAHrBsZFwaCL6RlUcoXw&usqp=CAU" class="img">
+                  <p id="paragrafo">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
                             
                 </div>
-            <div id="sidebar">
+            <div class="sidebar">
         <form name="form1" method="post" action="Valida" align="center">
             <table border="1">
                 <tr><td><h1>login</h1></td>
@@ -43,8 +44,14 @@
         </form></div>
                     </section>
             
-        <footer>
+            <footer class="grid3">
             <h5>SIX DESENVOLVIMENTO</h5>
+            <ul>
+                <li>Telefone:121322</li>
+                <li>Email:guim@outlo</li>
+                <li>Endereco: rua joao</li>
+                
+            </ul>
         </footer>
         <% 
             String rep = request.getParameter("ret");  
