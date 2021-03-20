@@ -1037,14 +1037,14 @@ public class ClinicaDao {
         return lista;
     }
      //controle de entrada e saida
-     public ArrayList<Entrada_Saida> listarFunc19() {
+     public ArrayList<Entrada_Saida> listarFunc19(String pesq) {
         ArrayList lista = new ArrayList<Entrada_Saida>();
 
         try {
             Connection con = Conecta.getConexao();
-            String sql = "SELECT * FROM funcE";
+            String sql = "SELECT * FROM funcE where id= ?";
             PreparedStatement pstmt = con.prepareStatement(sql);
-             
+             pstmt.setString(1, pesq);
             ResultSet rs = pstmt.executeQuery();
             
             while (rs.next()) {
@@ -1060,14 +1060,14 @@ public class ClinicaDao {
         }
         return lista;
     }
-     public ArrayList<Entrada_Saida> listarFunc20() {
+     public ArrayList<Entrada_Saida> listarFunc20(String pesq) {
         ArrayList lista = new ArrayList<Entrada_Saida>();
 
         try {
             Connection con = Conecta.getConexao();
-            String sql = "SELECT * FROM funcS";
+            String sql = "SELECT * FROM funcS where id = ?";
             PreparedStatement pstmt = con.prepareStatement(sql);
-            
+            pstmt.setString(1, pesq);
             ResultSet rs = pstmt.executeQuery();
             
             while (rs.next()) {

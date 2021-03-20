@@ -11,14 +11,13 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.swing.JOptionPane;
 
 /**
  *
  * @author guima
  */
-@WebServlet(urlPatterns = {"/ValidaSaida"})
-public class ValidaSaida extends HttpServlet {
+@WebServlet(urlPatterns = {"/Cadfuncionario"})
+public class Cadfuncionario extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -33,21 +32,16 @@ public class ValidaSaida extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
-            String login =request.getParameter("login");
-           String senha =request.getParameter("senha");
-            ClinicaDao c= new ClinicaDao();
-        java.util.Date data = new java.util.Date();
-        java.sql.Timestamp timestamp = new java.sql.Timestamp(data.getTime());
-            
-        boolean resposta = c.consultarr(login, senha);
-        if (resposta == true) {
-            Entrada_Saida e=new Entrada_Saida(login,timestamp);
-            c.gravarSaida(e);
-            response.sendRedirect("index.jsp");
-        } 
-        else {
-            response.sendRedirect("BatePonto.jsp?ret=NOK");
-        }
+            /* TODO output your page here. You may use following sample code. */
+            out.println("<!DOCTYPE html>");
+            out.println("<html>");
+            out.println("<head>");
+            out.println("<title>Servlet Cadfuncionario</title>");            
+            out.println("</head>");
+            out.println("<body>");
+            out.println("<h1>Servlet Cadfuncionario at " + request.getContextPath() + "</h1>");
+            out.println("</body>");
+            out.println("</html>");
         }
     }
 

@@ -25,28 +25,33 @@
             </nav>
         </header>
             
-                <section class="grid2">  
-                    <a href="Entradasaida.jsp">Controle de Entrada e Saida</a>
-                    <a href="">Exibir estoque</a>
-                    <a href="">Cadastrar novo Produto</a>
-                    <a href="">Mostrar Funcionarios</a>
-                    <a href="">Adicionar novas especialidades para medicos</a>
-                    <a href="">Mudar Status Funcionario</a>
-                    <a href="">Demitir Funcionario</a>
-                    <a href="">Controle de gasto</a>
-                    <a href="">Declaração de compra</a>
-                    </section>
+               <div class="row">
+                    <div class="mainn"> 
+                        <div class="grid-container">
+                            <div class="itemgrid"><a href="Entradasaida.jsp">Controle de Entrada e Saida</a></div>
+                    <div class="itemgrid"><a href="">Exibir estoque</a></div>
+                    <div class="itemgrid"><a href="">Cadastrar novo Produto</a></div>
+                    <div class="itemgrid"><a href="">Mostrar Funcionarios</a></div>
+                    <div class="itemgrid"><a href="Cadfunci.jsp">Cadastrar Funcionario</a></div>
+                    <div class="itemgrid"><a href="">Adicionar novas especialidades para medicos</a></div>
+                    <div class="itemgrid"><a href="">Mudar Status Funcionario</a></div>
+                    <div class="itemgrid"><a href="">Demitir Funcionario</a></div>
+                    <div class="itemgrid"><a href="">Controle de gasto</a></div>
+                    <div class="itemgrid"><a href="">Declaração de compra</a></div>
+                    
+            </div></div>
+                   <div class="footerr">
             
-            <footer class="grid3">
             <h5>SIX DESENVOLVIMENTO</h5>
+            <iframe src="https://www.youtube.com/embed/kM0Ee0KnhlI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <ul>
                 <li>Telefone:121322</li>
                 <li>Email:guim@outlo</li>
                 <li>Endereco: rua joao</li>
                 
             </ul>
-        </footer>
         
-    </div>
+        
+                   </div></div>
         </body>
 </html>

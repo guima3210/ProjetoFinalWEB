@@ -1,6 +1,6 @@
 <%-- 
-    Document   : BatePonto
-    Created on : 20/03/2021, 03:09:35
+    Document   : Cadfunci
+    Created on : 20/03/2021, 16:12:14
     Author     : guima
 --%>
 
@@ -18,24 +18,43 @@
             
         </header>
         <div class="row">
-            <div class="mainn">
+            <div class="mainnn">
             
-                <div class="Formulario">
-                    <form name="form1" method="post" action="ValidaSaida" align="center">
+           <div class="grid-containerr">
+               <form name="form1" method="post" action="Cadfuncionario" align="center">
             
-                <h2>login</h2>
-                    <input type="text" name="login">
+                <div class="itemgridd ">RG
+                    <input type="text" name="rg"></div>
             
-                <h2>senha</h2>
-                <input type="text" name="senha">
+                <div class="itemgridd ">NOME:<input type="text" name="nome"></div>
+                
+                   <div class="itemgridd "><h2>Idade</h2>
+                    <input type="text" name="idade"></div>
             
-                <br><br>
+                <div class="itemgridd "><h2>Login</h2>
+                <input type="text" name="login"></div>
+                
+                <div class="itemgridd "><h2>Senha</h2>
+                    <input type="text" name="senha"></div>
+            
+                <div class="itemgridd "><h2>Salario</h2>
+                <input type="text" name="salario"></div>
+                
+                <div class="itemgridd "><h2>Email</h2>
+                    <input type="text" name="email"></div>
+            
+                <div class="itemgridd "><h2>Numero fixo:</h2>
+                <input type="text" name="numerof"></div>
+                
+                <div class="itemgridd "><h2>Numero Carteira de trabalho</h2>
+                <input type="text" name="numeroct"></div>
+                
             <input type="submit" value="Sair">
            
         </form>
             </div></div>
             
-        <div class="footerr">
+        <div class="footer">
             <h5>SIX DESENVOLVIMENTO</h5>
             <iframe src="https://www.youtube.com/embed/kM0Ee0KnhlI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <ul>

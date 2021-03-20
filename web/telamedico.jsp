@@ -12,37 +12,42 @@
         <title>JSP Page</title>
         <link rel="stylesheet" type="text/css" href="estilo.css">
     </head>
-    <body>
-        <div id="wrap">
-        <header class="header"><a href="index.jsp"><img src="https://cdn.discordapp.com/attachments/695407830660022286/708101674442555472/f2da5279-05f2-4a9a-8f5c-68788051317b.png" width=150></a>
+    <header class="header"><a href="index.jsp"><img src="https://cdn.discordapp.com/attachments/695407830660022286/708101674442555472/f2da5279-05f2-4a9a-8f5c-68788051317b.png" width=150></a>
             <nav>
                 <ul class="menu">                
                     <li><a href="index.jsp">Sair</a></li>
                     <li><a href="BatePonto.jsp">Bate Ponto Saida</a></li>
+                    
                 </ul>
             </nav>
         </header>
             
-          <section class="grid2">
-              <div class="content">
-                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGoZ-D0VTsSaXsIgkAHrBsZFwaCL6RlUcoXw&usqp=CAU" class="img">
-                  <p id="paragrafo">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
-                            
-                </div>
-            <div class="sidebar">
-        </div>
-                    </section>
+               <div class="row">
+                    <div class="mainn"> 
+                        <div class="grid-container">
+                            <div class="itemgrid"><a href="Entradasaida.jsp">Controle de Entrada e Saida</a></div>
+                    <div class="itemgrid"><a href="">Exibir estoque</a></div>
+                    <div class="itemgrid"><a href="">Cadastrar novo Produto</a></div>
+                    <div class="itemgrid"><a href="">Mostrar Funcionarios</a></div>
+                    <div class="itemgrid"><a href="">Adicionar novas especialidades para medicos</a></div>
+                    <div class="itemgrid"><a href="">Mudar Status Funcionario</a></div>
+                    <div class="itemgrid"><a href="">Demitir Funcionario</a></div>
+                    <div class="itemgrid"><a href="">Controle de gasto</a></div>
+                    <div class="itemgrid"><a href="">Declaração de compra</a></div>
+                    
+            </div></div>
+                   <div class="footerr">
             
-            <footer class="grid3">
             <h5>SIX DESENVOLVIMENTO</h5>
+            <iframe src="https://www.youtube.com/embed/kM0Ee0KnhlI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <ul>
                 <li>Telefone:121322</li>
                 <li>Email:guim@outlo</li>
                 <li>Endereco: rua joao</li>
                 
             </ul>
-        </footer>
         
-    </div>
+        
+                   </div></div>
         </body>
 </html>

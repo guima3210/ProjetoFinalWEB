@@ -6,19 +6,19 @@
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.ArrayList;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.swing.JOptionPane;
 
 /**
  *
  * @author guima
  */
-@WebServlet(urlPatterns = {"/ValidaSaida"})
-public class ValidaSaida extends HttpServlet {
+@WebServlet(urlPatterns = {"/Funcionarios"})
+public class Funcionarios extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -33,21 +33,44 @@ public class ValidaSaida extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
-            String login =request.getParameter("login");
-           String senha =request.getParameter("senha");
-            ClinicaDao c= new ClinicaDao();
-        java.util.Date data = new java.util.Date();
-        java.sql.Timestamp timestamp = new java.sql.Timestamp(data.getTime());
-            
-        boolean resposta = c.consultarr(login, senha);
-        if (resposta == true) {
-            Entrada_Saida e=new Entrada_Saida(login,timestamp);
-            c.gravarSaida(e);
-            response.sendRedirect("index.jsp");
-        } 
-        else {
-            response.sendRedirect("BatePonto.jsp?ret=NOK");
-        }
+            String pesq = request.getParameter("pesq");
+            pesq = pesq == null ? "" : pesq;
+
+            //Recupera os medicamentos
+            ArrayList<Entrada_Saida> lista = new ClinicaDao().listarFunc19(pesq);
+            ArrayList<Entrada_Saida> lista2 = new ClinicaDao().listarFunc20(pesq);
+
+            //Impime tabela com resultados
+            out.println("<p>"+"Tabela Entrada"+"<p>");
+            out.println("<table class='table table-bordered'>");
+            out.println("<thead class=\"thead-dark\"");
+            out.println("<tr>");
+            out.println("<th>Código id</th>");
+            out.println("<th>hora</th>");
+            out.println("</tr>");
+            out.println("</thead>");
+            for(int i=0; i<lista.size(); i++) {
+                out.println("<tr>");
+                out.println("<td>" + lista.get(i).getLogin() + "</td>");
+                out.println("<td>" + lista.get(i).getDate() + "</td>");
+                out.println("</tr>");
+            }
+            out.println("</table>");
+            out.println("<p>"+"Tabela Saida"+"<p>");
+            out.println("<table class='table table-bordered'>");
+            out.println("<thead class=\"thead-dark\"");
+            out.println("<tr>");
+            out.println("<th>Código id</th>");
+            out.println("<th>hora</th>");
+            out.println("</tr>");
+            out.println("</thead>");
+            for(int i=0; i<lista.size(); i++) {
+                out.println("<tr>");
+                out.println("<td>" + lista2.get(i).getLogin() + "</td>");
+                out.println("<td>" + lista2.get(i).getDate() + "</td>");
+                out.println("</tr>");
+            }
+            out.println("</table>");
         }
     }
 

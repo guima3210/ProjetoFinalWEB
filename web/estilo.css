@@ -1,4 +1,6 @@
-
+* {
+  box-sizing: border-box;
+}
 header{
     background: black;
     display: flex;
@@ -6,10 +8,6 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-}
-footer{
-    background: black;
-    color: white;
 }
 body,ul,li, p {
     margin: 0px;
@@ -33,66 +31,103 @@ a{
     display: block;
     padding: 10px;
 }
-
-.grid2 {
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+.side {
+  flex: 20%;
+  background-color: #f1f1f1;
+  padding: 20px;
+  height: 30%;
   
-  display: grid;
-  grid-template-columns: 1fr 200px;
-  grid-gap: 20px;
-  max-width: 800px;
+}
+
+/* Main column */
+.main {
+  flex: 80%;
+  background-color: white;
+  padding: 0px;
+  text-align: center;
+}
+
+.footer {
+    flex: 100%;
+    
+    bottom: 0px;
+    width: 100%;
+  padding: 20px;
+  text-align: center;
+  background: black;
+  color: white;
+  display: flex;
+  justify-content:space-around; 
+}
+.masi{
+    margin: 10px;
+    display: flex;
+    position: relative;
+    
+    
+}
+.main img{
+  width: 100%;
   padding: 10px;
-  margin: auto auto;
-  
-}
-form{
-    align-items: center;
-    
-    
-    
-}
-.grid2 a{
-    background: black;
-    color: white;
-    border-style: solid;
-    width: 200px;
-    height: 70px;
-    text-align: center;
 }
 
-.grid3{
-    background: black;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    padding: 150px;
-        
+/* Telas atores*/
+
+.mainn {
+  flex: 100%;
+  text-align: center;
 }
-.img{
-    margin-left: 20%;
+.mainnn {
+  flex: 100%;
+  text-align: center;
 }
-#paragrafo{
-    width: 600px;
-    align-items: center;
+.footerr {
+    flex: 100%;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+  padding: 20px;
+  text-align: center;
+  background: black;
+  color: white;
+  display: flex;
+  justify-content:space-around; 
 }
-.sidebar{
-    margin: 0 auto;
-    border-style: solid;
+.grid-container {
+  display: grid;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  grid-template-columns: auto auto auto;
+  background-color: white;
+  padding: 10px;
 }
-.sidebar > div {
-  margin-bottom: 10px;
+.itemgrid {
+  background-color: black;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+a:hover {
+    color: greenyellow;
 }
 
-@media (max-width: 600px) {
-  .grid2 {
-    grid-template-columns: 1fr;
-  }
-  .sidebar {
-    display: flex;
-    overflow: scroll;
-  }
-  .sidebar > div {
-    flex: 1 0 200px;
-    margin: 0 10px;
-  }
+.grid-containerr {
+  display: grid;
+  width: 50%;
+  grid-template-columns: auto auto auto auto;
+  background-color: white;
+  padding: 5px;
+  text-align: center;
+}
+.itemgridd {
+  background-color: red;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+ padding: 10px;
+  font-size: 20px;
+  text-align: center;
 }
